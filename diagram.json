@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "author": "Arvind Patil",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -105, "left": 133.8, "attrs": {} },
+    {
+      "type": "wokwi-ili9341",
+      "id": "lcd1",
+      "top": -191.2,
+      "left": -182.7,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-text",
+      "id": "leb1",
+      "top": -192,
+      "left": 57.6,
+      "attrs": { "text": " star animation on tft code by arvind." }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "leb2",
+      "top": 211.2,
+      "left": 0,
+      "attrs": { "text": " अरविन्द पाटील 21/11/23 ." }
+    }
+  ],
+  "connections": [
+    [ "lcd1:VCC", "uno:5V", "red", [ "h5", "v126.8", "h220.8" ] ],
+    [ "lcd1:GND", "uno:GND.2", "black", [ "h-14.2", "v155.6", "h278.4" ] ],
+    [ "lcd1:CS", "uno:10", "magenta", [ "h245", "v2" ] ],
+    [ "lcd1:RST", "uno:8", "gold", [ "h0" ] ],
+    [ "lcd1:D/C", "uno:9", "blue", [ "h33.8", "v50", "h211.2" ] ],
+    [ "lcd1:MOSI", "uno:11", "violet", [ "h0" ] ],
+    [ "lcd1:SCK", "uno:13", "purple", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}

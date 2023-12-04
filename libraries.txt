@@ -1,0 +1,6 @@
+# Wokwi Library List
+# See https://docs.wokwi.com/guides/libraries
+
+TFT
+Adafruit ILI9341
+Adafruit GFX Library
